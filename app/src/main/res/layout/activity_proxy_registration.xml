@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_gradient"
+    tools:context="com.example.steffan.prox.ProxyRegistration">
+
+    <EditText
+        android:id="@+id/regNameEditText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/regUserEditText"
+        android:layout_marginTop="26dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:drawableLeft="@drawable/ic_action_registration_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/regUserEditText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/regAgeEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/ic_action_registration_username"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/regPwEditText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/regEmailEditText"
+        android:layout_below="@+id/regEmailEditText"
+        android:layout_marginTop="26dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/regAgeEditText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/regNameEditText"
+        android:layout_below="@+id/regNameEditText"
+        android:layout_marginTop="25dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_registration_age"
+        android:ems="10"
+        android:hint="Enter your age"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/regEmailEditText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/regUserEditText"
+        android:layout_centerVertical="true"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_registration_email"
+        android:ems="10"
+        android:hint="Enter email adress"
+        android:inputType="textEmailAddress" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/regPwEditText"
+        android:layout_below="@+id/regPwEditText"
+        android:layout_marginTop="77dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#F0FFFF"
+        android:id="@+id/registerCardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Register" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
